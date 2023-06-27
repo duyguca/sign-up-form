@@ -1,0 +1,183 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: serif, "Josefin Slab";
+  font-weight: 100;
+}
+
+body {
+  background: linear-gradient(
+    to top,
+    rgb(209, 242, 252) 0%,
+    rgb(83, 203, 241) 100%
+  );
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  min-height: 100vh;
+  margin-bottom: 5rem;
+}
+
+.form-container {
+  background: white;
+  border-radius: 1em;
+  box-shadow: 5px 25px 50px rgb(0 0 0 / 96%),
+    inset -8px -15px 10px rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-right: 1px solid rgba(255, 255, 255, 0.2);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  margin-top: 4rem;
+}
+
+.form {
+  padding: 20px;
+}
+
+.form h2 {
+  position: relative;
+  color: darkslateblue;
+  font-size: 1.7em;
+
+  text-shadow: 1px 2px 4px #888;
+  margin-bottom: 1em;
+  font-family: serif;
+  font-weight: 100;
+}
+
+.form h2::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -7px;
+  width: 3em;
+  height: 0.1em;
+  background: darkblue;
+  box-shadow: 1px 2px 4px #ccc;
+}
+
+.form input,
+.form textarea {
+  width: 100%;
+  background: #d3d3d33d;
+  outline: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: serif;
+  font-weight: 100;
+  margin-top: 0.3em;
+}
+
+.form input:focus,
+.form textarea:focus {
+  background: #d3d3d33d;
+  border: 1px solid lightgreen;
+}
+
+.form input::placeholder {
+  color: #888;
+  opacity: 1;
+}
+
+.form input[type="submit"] {
+  background: lightgreen;
+  color: #555;
+  cursor: pointer;
+  padding: 1rem;
+  font-size: 1rem;
+}
+
+.form label {
+  display: block;
+  font-size: 0.9rem;
+  margin-top: 0.6rem;
+}
+
+fieldset {
+  border: none;
+  border-top: 0.1rem solid black;
+  margin-top: 1.5rem;
+  position: relative;
+}
+
+legend {
+  display: flex;
+  align-items: center;
+  margin-left: 3rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+}
+.circle {
+  color: #fff;
+  display: block;
+  font-size: 1rem;
+  text-align: center;
+  text-align: center;
+  position: absolute;
+  top: 0.2rem;
+  left: 1.5rem;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 50%;
+  background-color: lightgreen;
+}
+
+footer {
+  position: fixed;
+  bottom: 0rem;
+  width: 100%;
+  text-align: right;
+  font-size: 0.8rem;
+  padding: 0.6rem;
+  background: white;
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+  display: inline-block;
+  width: fit-content;
+}
+
+input[type="checkbox"] + label,
+input[type="radio"] + label {
+  display: inline-block;
+  width: fit-content;
+  margin-right: 2rem;
+}
+
+select[name="referredby"] {
+  width: 100%;
+  background: #d3d3d33d;
+  outline: none;
+  padding: 8px 10px;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  font-family: serif;
+  font-weight: 100;
+  margin-top: 0.3em;
+}
+
+#clear {
+  border: 0.5px solid lightgray;
+  opacity: 0.7;
+  margin-top: 2rem;
+  padding: 0.8rem;
+  font-size: 1rem;
+}
+
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}
