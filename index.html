@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sign up form</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100;400;500;600;700;800&display=swap" rel="stylesheet">
   </head>
   <body>
     <main>
@@ -18,6 +21,7 @@
               <legend><span class="circle">1</span>Account Info</legend>
               <label for="username">Name:</label>
               <input
+              placeholder="Full name..."
                 type="text"
                 name="username"
                 id="username"
@@ -26,21 +30,42 @@
                 aria-label="Username containing only alpha-numeric characters"
               />
               <label for="email">Email</label>
-              <input type="email" name="email" id="email" required />
+              <input placeholder="Email Address..." type="email" name="email" id="email" required />
               <label for="password">Password</label>
-              <input type="password" name="password" id="password" required />
+              <input 
+              placeholder="Password... min 8 chars"
+              type="password" 
+              name="password" 
+              id="password" 
+              required />
             </fieldset>
             <fieldset>
               <legend><span class="circle">2</span>Dev Skills</legend>
               <label for="programming-language">Programming Languages</label>
+              
               <input type="checkbox" name="html" id="html" value="html" />
               <label for="html">HTML</label>
               <input type="checkbox" name="css" id="css" value="css" />
               <label for="css">CSS</label>
+               <input type="checkbox" name="sass" id="sass" value="sass" />
+              <label for="sas">Sass</label>
+              
               <input type="checkbox" name="js" id="js" value="js" />
               <label for="js">JavaScript</label>
               <input type="checkbox" name="php" id="php" value="php" />
               <label for="php">PHP</label>
+              <input type="checkbox" name="python" id="python" value="python" />
+              <label for="python">Python</label>
+              
+
+              <label for="dev-ops">Dev-Ops</label>
+               <input type="checkbox" name="git" id="git" value="git" />
+              <label for="git">GIT</label>
+               <input type="checkbox" name="gulp" id="gulp" value="gulp" />
+              <label for="gulp">GULP</label>
+               <input type="checkbox" name="webpack" id="webpack" value="webpack" />
+              <label for="webpack">Webpack</label>
+              
             </fieldset>
             <fieldset>
               <legend><span class="circle">3</span>Experience</legend>
@@ -80,7 +105,7 @@
                 <optgroup label="Media">
                   <option value="internet">Internet</option>
                   <option value="radio">Radio</option>
-                  <option value="tv">TV</option>
+                  <option value="tv"selected >TV</option>
                   <option value="newpaper">Newspaper</option>
                 </optgroup>
                 <optgroup label="Other"></optgroup>
