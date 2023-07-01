@@ -94,9 +94,6 @@ main {
   font-size: 1rem;
 }
 
-fieldset:first-child label {
-  display: none;
-}
 .form label {
   display: block;
   font-size: 0.9rem;
@@ -188,9 +185,4 @@ select[name="referredby"] {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
-}
-
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
 }
