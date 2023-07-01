@@ -16,8 +16,9 @@ main {
   align-items: flex-start;
   min-height: 100vh;
   margin-bottom: 5rem;
-  /* max-width: 30rem; */
+  max-width: 30rem;
   margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 .form-container {
@@ -187,4 +188,9 @@ select[name="referredby"] {
   clip: rect(0, 0, 0, 0) !important;
   white-space: nowrap !important;
   border: 0 !important;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
