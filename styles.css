@@ -2,16 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: serif, "Josefin Slab";
-  font-weight: 100;
+  font-family: "Roboto Slab", sans-serif;
+  font-weight: 700;
 }
 
 body {
-  background: linear-gradient(
-    to top,
-    rgb(209, 242, 252) 0%,
-    rgb(83, 203, 241) 100%
-  );
+  background: linear-gradient(to top, #ff291f, #ffa64a);
 }
 
 main {
@@ -20,6 +16,9 @@ main {
   align-items: flex-start;
   min-height: 100vh;
   margin-bottom: 5rem;
+  max-width: 30rem;
+  margin: 0 auto;
+  padding-bottom: 5rem;
 }
 
 .form-container {
@@ -44,8 +43,8 @@ main {
 
   text-shadow: 1px 2px 4px #888;
   margin-bottom: 1em;
-  font-family: serif;
-  font-weight: 100;
+  font-family: "Roboto Slab";
+  font-weight: 800;
 }
 
 .form h2::before {
@@ -53,7 +52,7 @@ main {
   position: absolute;
   left: 0;
   bottom: -7px;
-  width: 3em;
+  width: 4em;
   height: 0.1em;
   background: darkblue;
   box-shadow: 1px 2px 4px #ccc;
@@ -67,12 +66,16 @@ main {
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: serif;
-  font-weight: 100;
+  font-family: "Roboto Slab";
+  font-weight: 400;
   margin-top: 0.3em;
 }
 
-.form input:focus,
+.form input:focus {
+  border: 3px solid rgb(255, 174, 66);
+  background-color: #fff;
+}
+
 .form textarea:focus {
   background: #d3d3d33d;
   border: 1px solid lightgreen;
@@ -84,8 +87,8 @@ main {
 }
 
 .form input[type="submit"] {
-  background: lightgreen;
-  color: #555;
+  background: darkblue;
+  color: #fff;
   cursor: pointer;
   padding: 1rem;
   font-size: 1rem;
@@ -124,7 +127,7 @@ legend {
   width: 1.5rem;
   height: 1.5rem;
   border-radius: 50%;
-  background-color: lightgreen;
+  background-color: darkblue;
 }
 
 footer {
@@ -157,12 +160,14 @@ select[name="referredby"] {
   padding: 8px 10px;
   border-radius: 6px;
   border: 1px solid rgba(255, 255, 255, 0.3);
-  font-family: serif;
-  font-weight: 100;
+  font-family: "Roboto Slab";
+  font-weight: 400;
   margin-top: 0.3em;
 }
 
 #clear {
+  background-color: #fff;
+  color: #ff291f;
   border: 0.5px solid lightgray;
   opacity: 0.7;
   margin-top: 2rem;
